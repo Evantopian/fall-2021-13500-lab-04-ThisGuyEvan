@@ -1,3 +1,12 @@
+/*
+Author: Evan Huang
+Course: CSCI-135
+Instructor: Mike Zamansky
+Assignment: Lab 04
+ 
+Compliation of test cases for Lab 04 Tasks.
+*/
+ 
 #include <iostream>
 #include "figures.h"
 #include "checkerboards.h"

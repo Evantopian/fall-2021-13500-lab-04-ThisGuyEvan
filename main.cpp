@@ -15,13 +15,30 @@ Compliation of test cases for Lab 04 Tasks.
 int main(){
 
   std::cout << "Task A:\n";
-  box(5, 10);
-  box(10, 5);
-  box(6, 6);
+  std::cout << box(5, 10);
+  std::cout << box(10, 5);
+  std::cout << box(6, 6);
 
 
   std::cout << "\nTask B:\n";
   std::cout << checkerboard(11, 6);
   std::cout << checkerboard(14, 8);
   std::cout << checkerboard(6, 3);
+
+
+  std::cout << "\nTask C:\n";
+  std::cout << cross(4);
+  std::cout << cross(8);
+  std::cout << cross(12);
+
+
+  std::cout << "\nTask D:\n";
+  std::cout << lowerTriangle(3);
+  std::cout << lowerTriangle(5);
+  std::cout << lowerTriangle(9);
+
+  std::cout << "\nTask E:\n";
+  std::cout << upperTriangle(3);
+  std::cout << upperTriangle(5);
+  std::cout << upperTriangle(9);
 }

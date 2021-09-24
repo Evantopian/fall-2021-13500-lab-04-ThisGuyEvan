@@ -10,7 +10,6 @@ figures.o: figures.cpp figures.h
 checkerboards.o: checkerboards.cpp checkerboards.h
 	g++ -c checkerboards.cpp
 
-
 clean:
 	rm -f main.o figures.o
 

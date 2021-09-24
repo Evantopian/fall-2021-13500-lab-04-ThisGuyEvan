@@ -41,4 +41,12 @@ int main(){
   std::cout << upperTriangle(3);
   std::cout << upperTriangle(5);
   std::cout << upperTriangle(9);
+
+
+  std::cout << "\nTask F:\n";
+  std::cout << upsideDownTrapTri(12, 5);
+  std::cout << upsideDownTrapTri(5, 3);
+  std::cout << upsideDownTrapTri(12, 7);
+
+
 }

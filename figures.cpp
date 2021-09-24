@@ -72,3 +72,25 @@ std::string upperTriangle(int n){
 
   return s + "\n";
 }
+
+
+std::string upsideDownTrapTri(int w, int h){
+
+  if (w+1 < h*2){
+    return "Impossible shape!\n";
+  }
+
+  std::string s = "";
+  for (int i = 0; i < h; i++){
+    for (int j = 0; j < w-i; j++){
+      if (j < i){
+        s += " ";
+      }
+      else{
+        s += "*";
+      }
+    }
+    s+= "\n";
+  }
+  return s += "\n";
+}

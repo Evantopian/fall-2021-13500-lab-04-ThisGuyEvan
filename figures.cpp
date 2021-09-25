@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: Mike Zamansky
 Assignment: Lab 04
  
-Functions for each of the Tasks.
+Functions for each of the non checkboard tasks.
 */
 
 #include <iostream>

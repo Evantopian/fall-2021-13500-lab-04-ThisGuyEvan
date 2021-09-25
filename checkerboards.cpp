@@ -1,5 +1,7 @@
 #include <iostream>
+#include <string>
 #include "checkerboards.h"
+
 
 
 bool isEven(int x){
@@ -29,3 +31,43 @@ std::string checkerboard(int r, int c){
   }
   return s+="\n";
 }
+
+
+std::string checkerboard_3x3(int w, int h){
+  std::string s = "";
+  char ch;
+  bool toggle = false;
+  char temp;
+
+  for (int j = 0; j < h; j++){
+    // toggles the spaces.
+    if (j%3== 0){
+     if (toggle){
+       ch = '*';
+       toggle = false;
+     }
+     else{
+       toggle = true;
+       ch = ' ';
+     }
+    }
+    temp = ch;
+    // prints the lines
+    for (int i = 0; i < w; i++){
+      if (i%3 == 0){
+        if (ch == '*'){
+          ch = ' ';
+        }
+        else{
+          ch = '*';
+        }
+      }
+      s += ch;
+    }
+    s+= "\n";
+    ch = temp;
+  }
+
+  return s += "\n";
+}
+

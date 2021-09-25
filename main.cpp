@@ -47,6 +47,12 @@ int main(){
   std::cout << upsideDownTrapTri(12, 5);
   std::cout << upsideDownTrapTri(5, 3);
   std::cout << upsideDownTrapTri(12, 7);
+  
+
+  std::cout << "\nTask G:\n";
+  std::cout << "\n(16, 11)\n"<< checkerboard_3x3(16, 11);
+  std::cout << "\n(27, 27)\n"<< checkerboard_3x3(27, 27);
+  std::cout << "\n(12, 7)\n"<< checkerboard_3x3(12, 7);
 
 
 }

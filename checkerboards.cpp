@@ -1,7 +1,14 @@
-#include <iostream>
-#include <string>
-#include "checkerboards.h"
+/*
+Author: Evan Huang
+Course: CSCI-135
+Instructor: Mike Zamansky
+Assignment: Lab 04
 
+Both the checkboard tasks.
+*/
+
+#include <iostream>
+#include "checkerboards.h"
 
 
 bool isEven(int x){
@@ -51,8 +58,8 @@ std::string checkerboard_3x3(int w, int h){
        ch = ' ';
      }
     }
+    
     temp = ch;
-    // prints the lines
     for (int i = 0; i < w; i++){
       if (i%3 == 0){
         if (ch == '*'){
@@ -70,4 +77,3 @@ std::string checkerboard_3x3(int w, int h){
 
   return s += "\n";
 }
-

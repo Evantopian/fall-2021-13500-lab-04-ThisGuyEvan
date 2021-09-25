@@ -1,10 +1,19 @@
+/*
+Author: Evan Huang
+Course: CSCI-135
+Instructor: Mike Zamansky
+Assignment: Lab 04
+ 
+Functions for each of the Tasks.
+*/
+
 #include <iostream>
 #include "figures.h"
 
 
 std::string box(int r, int c){
-
   std::string s = "";
+  
   for (int i = 0; i < r; i++){
     for (int j = 0; j < c; j++){
       s += "* ";
@@ -40,7 +49,6 @@ std::string cross(int n){
     }
     s += "*\n";
   }
-
   return s += "\n";
 }
 
@@ -54,7 +62,6 @@ std::string lowerTriangle(int n){
     }
     s += "\n";
   }
-
   return s + "\n";
 }
 
@@ -68,19 +75,16 @@ std::string upperTriangle(int n){
     }
     s += "\n";
   }
-
-
   return s + "\n";
 }
 
 
 std::string upsideDownTrapTri(int w, int h){
-
   if (w+1 < h*2){
     return "Impossible shape!\n";
   }
-
   std::string s = "";
+  
   for (int i = 0; i < h; i++){
     for (int j = 0; j < w-i; j++){
       if (j < i){
